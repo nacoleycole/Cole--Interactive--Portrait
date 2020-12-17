@@ -7,7 +7,7 @@ function preload(){
 }
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(0);
+  background(10, 50, 50);
   
   
 
@@ -44,6 +44,7 @@ function image2(){
       for (let x = 0; x < img2.width; x += gridSize) {
   
         let index = (x + y*img2.width) * 4;
+        
   
         let r = img2.pixels[index + 2];
         let g = img2.pixels[index + 2];
